@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px 18px;
+  border-radius: 12px;
+}
+
+#cloud {
+  position: relative;
+  width: min(1000px, 95vw);
+  height: 300px;
+  margin: 15px auto;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.letter {
+  position: absolute;
+  font-weight: bold;
+  user-select: none;
+  text-shadow: 0 0 12px rgba(255, 255, 255, .5);
+}
+
+input {
+  width: min(400px, 90%);
+  padding: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin: 8px 0;
+}
+
+button {
+  margin: 6px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+#message {
+  min-height: 30px;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#hint {
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+.correct {
+  color: #4ade80;
+}
+
+.wrong {
+  color: #f87171;
+}
